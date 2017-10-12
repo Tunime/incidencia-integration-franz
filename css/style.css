@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #efefef;
+}
+header {
+    height: 50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.7); 
+    background: #fff;
+}
+header .contenedor {
+    width: 100%;
+    margin: auto;
+}
+header .h-left {
+    float: left;
+    display: flex;
+}
+.h-left .btn-menu {
+    margin: 13px 5px;
+}
+.h-left .btn-menu:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.h-left .h-logo {
+    display: flex;
+}
+.h-left .h-logo .h-txt {
+    width: 100px;
+    margin: 10px 5px;
+}
+.h-left .uno,.dos,.tres {
+    width: 25px;
+    height: 5px;
+    background: #770303;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+.h-left img {
+    width: 30px;
+    margin: 8px 0;
+    margin-left: 10px;
+}
+.h-left .h-txt p {
+    font-size: 8px;
+}
+.h-left .h-txt h1 {
+    font-size: 10px;
+}
+/* Aqui right-------  */
+header .h-right {
+    float: right;
+    display: flex;
+}
+.h-right .h-opt {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.h-right .h-opt p {
+    margin: auto;
+    color: #770303;
+    cursor: pointer;
+}
+
+.h-right button {
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    background: #770303;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.h-right button:hover {
+    cursor: pointer;
+    color: #FFB700;
+    background: #560000;
+}
+@media screen and (min-width: 480px){
+    header .contenedor {
+        width: 95%;
+    }
+}
