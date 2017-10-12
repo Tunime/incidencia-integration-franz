@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     background: #efefef;
@@ -49,7 +51,7 @@ header .h-left {
     font-size: 8px;
 }
 .h-left .h-txt h1 {
-    font-size: 10px;
+    font-size: 8px;
 }
 /* Aqui right-------  */
 header .h-right {
@@ -87,4 +89,12 @@ header .h-right {
     header .contenedor {
         width: 95%;
     }
+}
+
+.contenedor-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }

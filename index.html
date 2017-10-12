@@ -7,6 +7,7 @@
     <link href="https://file.myfontastic.com/9edDPe55GBYrm6PGjYtNqH/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
    
@@ -58,6 +59,82 @@
             </div>
         </div>
     </header>
+    <!-- comensamo incorporando el contenido dentro de el  -->
+    <div class="contenedor-total">
+        <h2>REGISTRO DE PERSONAL</h2>
+        <div class="contenedor--menu">
+          
+        </div>
+        <ul class="celdasdeinformacion">
+          <div>
+              <li>
+                <button onclick="modalvisto()" class="btn-agregar">+ cliente</button>
+              </li> 
+          </div>
+        </ul>
+    </div>
+
+
+    <!-- colocamos todos los modales  -->
+    <!-- colocamos todos los modales  -->
+    <!-- colocamos todos los modales  -->
+    <!-- comienzo del primer modal -->
+        <div id="modal-datos">
+            <div class="modal--contenedor">
+                <ul class="modal--contenedor-contenido">
+                    <div class="modal--cerrar">
+                        <a href="#" onclick="modalcerrar()">X</a>
+                    </div>
+                    <ul class="modal--informacion">
+                        <div class="modal--avatar">
+                            <figure>
+                                <img src="img/icon-user.png" alt="avatra-del-usuario">
+                            </figure>
+                            <h2 id="name">Henry Cochicatari</h2>
+                        </div>
+                        <ul class="modal--datos">
+                            <li><div class="referencia">DNI</div><div class="u-dato">76471166</div></li>
+                            <li><div class="referencia">EMAIL</div><div class="u-dato">tunime.1@gmail.com</div></li>
+                            <li><div class="referencia">CELULAR</div><div class="u-dato">956 783 675</div></li>
+                            <li><div class="referencia">DIRECCION</div><div class="u-dato">Las americas W-11</div></li>
+                            <li><div class="referencia">ROL</div><div class="u-dato">Administrador</div></li>
+                            <li><div class="referencia">ESPECIALIDAD</div><div class="u-dato">Doctor</div></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- fin del primer modal -->
+         <!-- comienzo del segundo modal -->
+        <div id="modal-datos-editar">
+            <div class="modal--contenedor modal--editar-informacion">
+                <ul class="modal--contenedor-contenido">
+                    <div class="modal--cerrar">
+                        <a href="#" onclick="modalcerrareditar()">X</a>
+                    </div>
+                    <ul class="modal--informacion">
+                        <ul class="modal--datos">
+                            <li><div class="referencia">Nombres</div><input type="name"></li>
+                            <li><div class="referencia">Apellidos</div><input type="firstname"></li>
+                            <li><div class="referencia">DNI</div><input type="numer"></li>
+                            <li><div class="referencia">EMAIL</div><input type="email"></li>
+                            <li><div class="referencia">CELULAR</div><input type="phone"></li>
+                            <li><div class="referencia">DIRECCION</div><input type="adress"></li>
+                            <li><div class="referencia">ROL</div><input type="text"></li>
+                            <li><div class="referencia">ESPECIALIDAD</div><input type="text"></li>
+                            <div class="modal-btn--confirmar">
+                                <a href="#">Guardar</a>
+                            </div>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <!-- fin del segundo modal -->
+    <!-- terminamos de colocar todos los modales  -->
+    <!-- terminamos de colocar todos los modales  -->
+    <!-- terminamos de colocar todos los modales  -->
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
