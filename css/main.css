@@ -96,13 +96,14 @@ center {
   .formulario--link .link-r a:hover {
     color: #3A080C; }
 
-.formulario--boton a {
+.formulario--boton button {
+  border: none;
   padding: 0.5em 3em;
   border-radius: 0.4em;
   color: white;
   background: #911720;
   box-shadow: 0 3px 3px 0 rgba(3, 2, 2, 0.64); }
-.formulario--boton a:hover {
+.formulario--boton button:hover {
   background: #983038; }
 
 .u--register {
